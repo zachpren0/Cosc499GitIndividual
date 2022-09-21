@@ -41,9 +41,17 @@ public class Main {
 	}
 static int[] intSort(int[] arr){
 	Arrays.sort(arr);
-	
-	return arr;
-	
-}
+  return arr;
+	}
+
+	static char[] charSort(char[] arr) {
+		//sorts array
+		Arrays.sort(arr);
+		return arr;
+	}
+
+
+
+
 }
 
