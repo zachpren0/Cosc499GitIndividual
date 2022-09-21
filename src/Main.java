@@ -34,22 +34,6 @@ public class Main {
 		System.out.print(charArr[i]);
 		}
 		
-
-		System.out.println("\nSorted: ");
-		charSort(charArr);
-		for (int i = 0; i < charArr.length; i++) {
-			System.out.print(charArr[i]);
-			}
-
-	}
-	
-	static char[] charSort(char[] arr) {
-		
-		Arrays.sort(arr);
-		return arr;
-	}
-
-
 		
 		
 		
@@ -61,6 +45,5 @@ static int[] intSort(int[] arr){
 	return arr;
 	
 }
-
 }
 
