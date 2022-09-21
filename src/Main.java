@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class Main {
@@ -7,14 +8,21 @@ public class Main {
 		Random random = new Random();
 		int[] intArr = new int [5];
 		char[]charArr = new char [5];
+		
+		System.out.print("Original: ");
 		for (int i = 0; i < intArr.length; i++) {
 			
 			int temp = random.nextInt(10);
 			
 			intArr[i]= temp;
-			
-					System.out.print(intArr[i]);	
+			//prints original array
+					System.out.print(+intArr[i]);	
 			}
+		intSort(intArr);
+		System.out.print("\nSorted: ");
+		for (int i = 0; i < intArr.length; i++) {
+			System.out.print(+intArr[i]);
+		}
 		
 		System.out.println();
 		
@@ -27,8 +35,15 @@ public class Main {
 		}
 		
 		
+		
+		
 
 	}
-
+static int[] intSort(int[] arr){
+	Arrays.sort(arr);
+	
+	return arr;
+	
+}
 }
 
