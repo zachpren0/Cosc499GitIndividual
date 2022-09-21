@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class Main {
@@ -26,8 +27,18 @@ public class Main {
 		System.out.print(charArr[i]);
 		}
 		
-		
+		System.out.println("\nSorted: ");
+		charSort(charArr);
+		for (int i = 0; i < charArr.length; i++) {
+			System.out.print(charArr[i]);
+			}
 
+	}
+	
+	static char[] charSort(char[] arr) {
+		
+		Arrays.sort(arr);
+		return arr;
 	}
 
 }
