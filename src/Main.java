@@ -24,8 +24,8 @@ public class Main {
 			System.out.print(+intArr[i]);
 		}
 		
-		System.out.println();
 		
+		System.out.print("\nOriginal: ");
 		for (int i = 0; i < charArr.length; i++) {
 		
 		char tempchar = (char)(random.nextInt(26) + 'a');
@@ -33,6 +33,15 @@ public class Main {
 		charArr[i] = tempchar;
 		System.out.print(charArr[i]);
 		}
+		
+		charSort(charArr);
+		System.out.print("\nSorted: ");
+		
+		
+		for (int i = 0; i < charArr.length; i++) {
+			
+			System.out.print(charArr[i]);
+			}
 		
 		
 		
