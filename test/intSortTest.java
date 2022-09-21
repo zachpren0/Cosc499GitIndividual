@@ -1,28 +1,27 @@
 import static org.junit.Assert.*;
 
-import java.util.Arrays;
-
-import org.junit.Test;
 import org.junit.Assert;
+import org.junit.Test;
 
-public class charSortTest {
+public class intSortTest {
 
 	@Test
 	public void test() {
 		Main test = new Main();
 		
 		//sample array unsorted
-		char[] sample = {1,4,2,0,3};
+		int[] sample = {1,4,2,0,3};
 		
 		//what we expect the output to be when calling intSort()
-		char[] result = {0,1,2,3,4};
+		int[] result = {0,1,2,3,4};
 		
 		//calls intsort on sample and casts to output
-		char[] output = test.charSort(sample);
+		int[] output = test.intSort(sample);
 		
 		//J unit test that both arrays are equivalent
+		Assert.assertArrayEquals(output, result);
 		
-		assertTrue(Arrays.equals(output, result));
+		
 	}
 
 }
