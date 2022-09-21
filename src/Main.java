@@ -36,7 +36,7 @@ public class Main {
 	}
 	
 	static char[] charSort(char[] arr) {
-		
+		//sorts array
 		Arrays.sort(arr);
 		return arr;
 	}
